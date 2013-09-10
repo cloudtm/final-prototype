@@ -1,0 +1,39 @@
+package test;
+
+
+class Book {
+    String bookName;
+    double price;
+}
+
+relation DRWithBooksTree {
+    .pt.ist.fenixframework.DomainRoot playsRole parentTree;
+    Book playsRole booksTree {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTree;
+    }
+}
+
+relation DRWithBooksOpt {
+    .pt.ist.fenixframework.DomainRoot playsRole parentOpt;
+    Book playsRole booksOpt {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTreeArray;
+    }
+}
+
+relation DRWithBooksGhost {
+    .pt.ist.fenixframework.DomainRoot playsRole parentGhostTree;
+    Book playsRole booksGhostTree {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTreeGhost;
+    }
+}
+
+relation DRWithBooksOptGhost {
+    .pt.ist.fenixframework.DomainRoot playsRole parentOptGhostTree;
+    Book playsRole booksOptGhostTree {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTreeArrayGhost;
+    }
+}

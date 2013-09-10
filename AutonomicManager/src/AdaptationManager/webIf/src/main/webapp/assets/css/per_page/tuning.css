@@ -1,0 +1,181 @@
+.clc {
+	clear: both;
+}
+
+div.resource {
+	/*border: 1px dashed;*/
+	width: 100%;				
+	text-align: justify;
+}
+
+fieldset.resource{	
+	border: 1px solid #ddd;
+	padding: 0 1.4em 1.4em 1.4em;
+	margin: 0 0 1.5em 0;
+	border-radius: 8px;	
+	width: 880px;
+	margin: 0 auto;	
+	padding: 5px;
+}
+
+
+
+
+
+/** CURRENT, CONTROL and TUNING **/
+
+fieldset.resource div.current{
+	/*border: 1px dashed red;*/	
+	/*background-color: red;*/
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+}
+
+fieldset.resource div.tuning{	
+	/*border: 1px dashed;*/		
+	/*background-color: blue;*/
+	margin-left: 150px;
+	width: 260px;	
+	display: inline-block;
+	vertical-align: middle;
+}
+
+fieldset.resource div.control{
+	/*background-color: yellow;*/
+	/*margin-left: 10px;*/
+	/*border: 1px dashed;*/	
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+/** END CURRENT, CONTROL and TUNING **/
+
+fieldset.resource div.current p {
+	margin: 0;
+	display: inline-block;	
+	vertical-align: middle;
+}
+
+fieldset.resource div.current p.label {
+	/*border: 1px dashed red;*/	
+	width: 200px;
+}
+
+fieldset.resource div.current p.config{
+	/*border: 1px dashed;*/
+	display: inline-block;	
+	vertical-align: middle;
+}
+
+fieldset.resource div.current p.config span{
+	margin-right: 5px;	
+}
+
+fieldset.resource div.control input[type=submit] {
+	width: 50px;	
+}
+
+fieldset.resource div.current label{
+	/*border: 1px dashed red;*/
+	width: 180px;
+	display: inline-block;	
+}
+
+div.tuning li {
+	/*border: 1px dashed;*/
+}
+
+
+div.tuning div.radio_tuning{
+	/*border: 1px dotted blue;*/
+	display: inline-block;
+	width: 100px;	
+}
+
+
+div.tuning div.conf_tuning{
+	/*border: 1px solid red;*/
+	margin-left: 10px;	
+	display: inline-block;
+	width: 135px;
+}
+
+div.tuning div.conf_tuning select.forecasting{
+	/*border: 1px solid blue;*/
+	/*width: 140px;*/
+}
+
+div.tuning div.conf_tuning fieldset{
+	margin: 0px;
+}
+
+fieldset.resource ol {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset.resource li {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+}
+
+/* INPUT */
+
+
+.submit {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	
+	font-weight:bold;
+	padding:5px 14px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #287ace;
+    cursor:pointer;
+}.submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}.submit:active {
+	position:relative;
+	top:1px;
+}
+
+input {
+    padding: 4px;
+    /*font-size: 12px;*/
+    border: 1px solid #d5d5d5;
+	color: #333;
+	border-radius: 4px 4px 4px 4px !important;
+}
+
+select {
+	padding: 4px;
+    /*font-size: 12px;*/
+    border: 1px solid #d5d5d5;
+	/*color: #333;*/
+	border-radius: 4px 4px 4px 4px !important;
+	background-color: #fff;
+}
+
+select:disabled {
+	background-color: #dddddd;
+}
+
+
+/* END INPUT */

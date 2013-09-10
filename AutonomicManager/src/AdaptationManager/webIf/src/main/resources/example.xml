@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+  <package name="webif" namespace="/" extends="struts-default">	
+	<default-class-ref class="eu.cloudtm.webif.BaseAction" />
+
+    <global-results>
+      <result name="rest_error">/pages/errorREST.jsp</result>      
+    </global-results>
+    
+    <global-exception-mappings>
+    	<exception-mapping exception="eu.cloudtm.webif.exceptions.RESTControllerException" result="rest_error" />
+  	</global-exception-mappings>
+  
+    
+    <!-- <default-action-ref name="myCloud" />  -->
+    
+    <action name="myCloud" class="eu.cloudtm.webif.MyCloud">
+      <result>/pages/myCloud.jsp</result>
+    </action>
+    
+    <action name="tuning" class="eu.cloudtm.webif.Tuning">
+      <result>/pages/tuning.jsp</result>
+    </action>
+    
+    <action name="whatIf">
+      <result>/pages/whatIf.jsp</result>
+    </action>
+    
+    <action name="workloadAnalysis">
+      <result>/pages/workloadAnalysis.jsp</result>
+    </action>
+
+<!-- 
+    <action name="Login_*" method="{1}" class="eu.cloudtm.Login">
+      <result name="input">/pages/Login.jsp</result>
+      <result type="redirectAction">Menu</result>
+    </action>
+ -->    
+
+<!--
+    <action name="*">
+      <result>/errors/pageNotFound.jsp</result>
+    </action>
+ -->
+ 
+<!-- 
+    <action name="*" class="eu.cloudtm.ExampleSupport">
+      <result>/data/{1}.jsp</result>
+    </action>
+-->
+    
+    <!-- Add additional "example" package actions here. -->
+    
+  </package>
+</struts>

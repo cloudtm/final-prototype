@@ -1,0 +1,32 @@
+package test;
+
+class App {
+    boolean isPopulated;
+    boolean populationToken;
+}
+
+relation DRWithApp {
+    .pt.ist.fenixframework.DomainRoot playsRole domainRoot;
+    App playsRole app;
+}
+
+class Book {
+    String bookName;
+    double price;
+}
+
+relation DRWithBooksRandom {
+    .pt.ist.fenixframework.DomainRoot playsRole parentRandom;
+    Book playsRole booksRandom {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTree;
+    }
+}
+
+relation DRWithBooksColocated {
+    .pt.ist.fenixframework.DomainRoot playsRole parentColocated;
+    Book playsRole booksColocated {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.ColocatedBPlusTree;
+    }
+}

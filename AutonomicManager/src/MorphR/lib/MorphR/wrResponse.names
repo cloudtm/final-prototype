@@ -1,0 +1,15 @@
+wrResponse.
+
+memory: continuous.
+readsPerRO: continuous.
+readsPerWr: continuous.
+putsPerWr: continuous.
+localServiceTimeWrXact: continuous.
+sizeRemoteGetReplyMsg: continuous.
+sizePrepareMsg: continuous.
+writePercentageXact: continuous.
+numNodes: continuous.
+replicationDegree: continuous.
+wrResponse: continuous.
+
+

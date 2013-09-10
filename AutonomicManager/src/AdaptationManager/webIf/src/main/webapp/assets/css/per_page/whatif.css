@@ -1,0 +1,153 @@
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../../images/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+/*** modal ***/
+
+.clc {
+	clear: both;
+}
+
+form#whatif div.table {
+	/*border: 2px solid;*/	
+	display: table;
+	width: 100%;
+    height: 100%;
+}
+
+form#whatif div.row {	
+	display: table-row;
+	height: auto;		
+}
+
+form#whatif div.column {
+	/*border: 1px dashed;*/
+	display: table-cell;
+	padding-top: 10px;
+}
+
+form#whatif div.first {
+	padding-top: 0px;
+}
+
+form#whatif fieldset {  
+	border: 1px solid #ddd;
+	padding: 0 1.4em 1.4em 1.4em;
+	margin: 0 0 1.5em 0;
+	border-radius: 8px;
+	margin: 0 5px;
+	height: 100%;    
+}
+
+form#whatif div.action {
+	/*border: 1px solid red;*/
+	padding-top: 20px;
+	display: table-cell;
+	text-align: center;	
+}
+
+
+/* INPUT */
+
+
+.submit {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	
+	font-weight:bold;
+	padding:5px 14px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #287ace;
+    cursor:pointer;
+}.submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}.submit:active {
+	position:relative;
+	top:1px;
+}
+
+input {
+    padding: 4px;
+    /*font-size: 12px;*/
+    border: 1px solid #d5d5d5;
+	color: #333;
+	border-radius: 4px 4px 4px 4px !important;
+}
+
+
+/* END INPUT */
+
+
+
+/* *** PARAMS *** */
+div.param {
+	/*border-bottom: 1px dashed;*/
+	width: 270px;
+	display: inline-block;
+	margin: 10px 5px 0 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.param label {
+	/*border-bottom: 1px dashed;*/
+	width: 200px;	
+	display: inline-block;
+}
+
+div.param label.close {
+	/*border-bottom: 1px dashed;*/
+	width: 100px;		
+}
+
+div.param input {
+	/*border-bottom: 1px dashed;*/
+	width: 50;	
+}
+
+.plot {
+	width:400px;
+	height:280px;	
+}

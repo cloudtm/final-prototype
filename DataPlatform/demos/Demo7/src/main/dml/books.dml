@@ -1,0 +1,24 @@
+package test;
+
+
+class Book {
+    String bookName;
+    double price;
+}
+
+relation DRWithBooks {
+    .pt.ist.fenixframework.DomainRoot playsRole parent;
+    Book playsRole books {
+        multiplicity *;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTree;
+    }
+}
+
+relation DRWithBooksIndexed {
+    .pt.ist.fenixframework.DomainRoot playsRole parentIndexed;
+    Book playsRole booksIndexed {
+        multiplicity *;
+        indexed by bookName;
+        collection pt.ist.fenixframework.adt.bplustree.BPlusTree;
+    }
+}

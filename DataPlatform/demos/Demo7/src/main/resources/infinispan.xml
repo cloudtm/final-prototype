@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infinispan>
+    <global>
+        <globalJmxStatistics
+                enabled="true"
+                jmxDomain="org.infinispan"/>
+        <transport
+                clusterName="scenario-7-local-cluster">
+            <properties>
+                <property
+                        name="configurationFile"
+                        value="jgroups.xml"/>
+            </properties>
+        </transport>
+    </global>
+    <default>
+        <locking
+                isolationLevel="SERIALIZABLE"
+                concurrencyLevel="32"
+                writeSkewCheck="false"
+                useLockStriping="false"
+                lockAcquisitionTimeout="1000"/>
+        <jmxStatistics
+                enabled="false"/>
+        <deadlockDetection
+                enabled="false"/>
+        <transaction
+                transactionManagerLookupClass="org.infinispan.transaction.lookup.JBossStandaloneJTAManagerLookup"
+                useEagerLocking="false"
+                transactionMode="TRANSACTIONAL"
+                syncRollbackPhase="false"
+                cacheStopTimeout="30000"
+                useSynchronization="false"
+                syncCommitPhase="true"
+                lockingMode="OPTIMISTIC"
+                eagerLockSingleNode="false"
+                use1PcForAutoCommitTransactions="false"
+                autoCommit="true">
+		<recovery enabled="false" />
+	</transaction>
+        <clustering mode="d">
+            <sync
+                    replTimeout="60000" />
+            <hash
+                    numOwners="1"
+                    >
+            </hash>
+            <l1
+                    enabled="false"
+                    onRehash="false"
+                    lifespan="600000"
+                    invalidationThreshold="-1"
+                    cleanupTaskFrequency="600000" />
+        </clustering>
+        <versioning
+                enabled="true"
+                versioningScheme="GMU"/>
+    </default>
+</infinispan>
+
