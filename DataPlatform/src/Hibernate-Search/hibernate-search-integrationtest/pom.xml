@@ -40,7 +40,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-release-version>3.0.6.RELEASE</spring-release-version>
+        <spring-release-version>5.2.0.RELEASE</spring-release-version>
         <version.jboss.as>7.1.1.Final</version.jboss.as>
         <version.arquillian>1.0.0.Final</version.arquillian>
         <version.shrinkwrapResolver>2.0.0-alpha-1</version.shrinkwrapResolver>
