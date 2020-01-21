@@ -16,7 +16,7 @@
       <dependency>
          <groupId>org.infinispan</groupId>
          <artifactId>infinispan-core</artifactId>
-         <version>4.2.1.FINAL</version>
+         <version>10.0.0.Final</version>
       </dependency>
 
       <!--Dependency for remote transactions on Infinispan-->
@@ -29,7 +29,7 @@
       <dependency>
          <groupId>org.infinispan</groupId>
          <artifactId>infinispan-core</artifactId>
-         <version>4.2.1.FINAL</version>
+         <version>10.0.0.Final</version>
          <scope>tests</scope>
          <type>test-jar</type>
       </dependency>
