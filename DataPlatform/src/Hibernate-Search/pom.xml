@@ -154,7 +154,7 @@
         <jbossJTAVersion>4.16.4.Final</jbossJTAVersion>
         <avroVersion>1.6.3</avroVersion>
         <jacksonAslVersion>1.9.2</jacksonAslVersion>
-        <commonsIoVersion>1.4</commonsIoVersion>
+        <commonsIoVersion>2.7</commonsIoVersion>
         <commonsCodecVersion>1.5</commonsCodecVersion>
         <commonsLangVersion>2.6</commonsLangVersion>
         <!-- Used in the hibernate-search-modules project -->
