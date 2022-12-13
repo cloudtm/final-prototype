@@ -16,7 +16,7 @@
         <version.fenix.framework>2.10-cloudtm-SNAPSHOT</version.fenix.framework>
         <version.hibernate.search.infinspan>4.2.0.cloudtm.Final</version.hibernate.search.infinspan>
         <version.infinispan>5.2.8-cloudtm-SNAPSHOT</version.infinispan>
-        <version.jgroups>3.3.0.CR2</version.jgroups>            
+        <version.jgroups>3.6.10.Final</version.jgroups>            
         <version.maven-antrun-plugin>1.7</version.maven-antrun-plugin>
         <version.maven-assembly-plugin>2.4</version.maven-assembly-plugin>
         <version.maven-build-helper-plugin>1.7</version.maven-build-helper-plugin>
